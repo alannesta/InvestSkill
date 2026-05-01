@@ -18,7 +18,15 @@ DCF requires disciplined assumptions. Small changes in growth rate, margin, or d
 
 ### Step 1: Establish Base Metrics
 
-Collect and document the current baseline before projecting forward:
+**IMPORTANT DATA SOURCING INSTRUCTION:**
+Do NOT use web search to get data. You MUST use the provided local script which fetches all required real-time and historical data directly from the yfinance API. The data fetched by this script satisfies the timeliness requirements for the analysis (providing the latest TTM metrics and the most recent 4 years of annual financial statements).
+
+Run the following command to retrieve the base metrics for your target ticker:
+```bash
+.venv/bin/python .agents/scripts/fetch_dcf_data.py <TICKER>
+```
+
+Collect and document the current baseline using the script's output before projecting forward:
 
 - **Trailing Twelve Months (TTM) Free Cash Flow** = Operating Cash Flow − Capital Expenditures
 - **Revenue base** (TTM revenue and most recent full fiscal year)

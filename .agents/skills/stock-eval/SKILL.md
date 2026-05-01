@@ -6,6 +6,16 @@ description: Evaluate US stocks with comprehensive fundamental and valuation ana
 
 Perform comprehensive stock evaluation combining fundamental analysis, valuation modeling, quality scoring, and risk assessment to produce investment-grade conclusions.
 
+**IMPORTANT DATA SOURCING INSTRUCTION:**
+Do NOT use web search to get data. You MUST use the provided local script which fetches all required real-time and historical data directly from the yfinance API. The data fetched by this script satisfies the timeliness requirements for the analysis (providing the latest TTM metrics, current multiples, and the most recent 4 years of annual financial statements for Piotroski F-Score / ROIC calculations).
+
+Run the following command to retrieve the foundational metrics and historical financial statements for your target ticker:
+```bash
+.venv/bin/python .agents/scripts/fetch_stock_eval_data.py <TICKER>
+```
+
+Collect and document the current baseline using the script's output before performing the analysis:
+
 ## Analysis Components
 
 ### 1. Company Overview

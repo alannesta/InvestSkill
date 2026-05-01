@@ -6,6 +6,16 @@ description: Deep fundamental analysis of US stocks using financial statements
 
 Conduct deep-dive fundamental analysis of US stocks using financial statements and business metrics.
 
+**IMPORTANT DATA SOURCING INSTRUCTION:**
+Do NOT use web search to get data. You MUST use the provided local script which fetches all required real-time and historical data directly from the yfinance API. The data fetched by this script satisfies the timeliness requirements for the analysis (providing the latest TTM metrics and the most recent 4 years of annual financial statements).
+
+Run the following command to retrieve the foundational metrics and historical financial statements for your target ticker:
+```bash
+.venv/bin/python .agents/scripts/fetch_fundamental_data.py <TICKER>
+```
+
+Collect and document the current baseline using the script's output before performing the analysis:
+
 ## Financial Statement Analysis
 
 1. **Income Statement Analysis**
