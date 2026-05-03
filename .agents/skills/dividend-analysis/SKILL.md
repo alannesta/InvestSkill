@@ -4,6 +4,13 @@ description: Analyze dividend safety, growth, and income investing opportunities
 
 # Dividend Analysis
 
+> [!IMPORTANT]
+> **IMPORTANT DATA SOURCING INSTRUCTION**
+> 1. You MUST use the local Python script to gather fundamental dividend data instead of web search.
+> 2. Execute this exact command to retrieve the data: `.venv/bin/python .agents/scripts/fetch_dividend_data.py <TICKER>`
+> 3. The data returned by this script satisfies the timeliness requirements for the analysis.
+> 4. Use the pre-calculated CAGR figures and Free Cash Flow metrics from the script to grade the Dividend Safety Score.
+
 Comprehensive analysis of dividend safety, growth trajectory, yield sustainability, and income investing opportunities for US-listed stocks, REITs, and income-focused portfolios.
 
 ## Analysis Framework

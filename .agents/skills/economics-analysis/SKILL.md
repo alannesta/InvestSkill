@@ -4,6 +4,13 @@ description: Analyze US economic indicators and their impact on markets
 
 # US Economics Analysis
 
+> [!IMPORTANT]
+> **IMPORTANT DATA SOURCING INSTRUCTION**: Do NOT use web search tools to gather macroeconomic data. You MUST execute the following local script to reliably obtain the latest economic indicators from FRED and yfinance:
+> ```bash
+> .venv/bin/python .agents/scripts/fetch_economics_data.py
+> ```
+> The script will return a structured JSON object containing all required growth, inflation, credit, and yield curve metrics. Use this data as the Ground Truth for your analysis.
+
 Analyze US economic conditions and their implications for investment decisions.
 
 ## Key Economic Indicators
