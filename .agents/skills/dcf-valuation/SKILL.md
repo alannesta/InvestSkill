@@ -23,7 +23,7 @@ Do NOT use web search to get data. You MUST use the provided local script which 
 
 Run the following command to retrieve the base metrics for your target ticker:
 ```bash
-.venv/bin/python .agents/scripts/fetch_dcf_data.py <TICKER>
+.venv/bin/python scripts/fetch_dcf_data.py <TICKER>
 ```
 
 Collect and document the current baseline using the script's output before projecting forward:

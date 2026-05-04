@@ -7,7 +7,7 @@ description: Analyze short interest, short squeeze potential, and bearish positi
 > [!IMPORTANT]
 > **IMPORTANT DATA SOURCING INSTRUCTION**
 > 1. You MUST use the local Python script to gather fundamental short interest data instead of web search.
-> 2. Execute this exact command to retrieve the data: `.venv/bin/python .agents/scripts/fetch_short_interest_data.py <TICKER>`
+> 2. Execute this exact command to retrieve the data: `.venv/bin/python scripts/fetch_short_interest_data.py <TICKER>`
 > 3. The data returned by this script satisfies the timeliness requirements for the analysis.
 > 4. Borrow rate, 4-period historical short interest trends, and daily short volume could be missing from the fetch script. **Do NOT make up missing data**, simply proceed with what's available and note the limitations in your report.
 

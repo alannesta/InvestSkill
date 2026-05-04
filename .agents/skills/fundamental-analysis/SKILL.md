@@ -11,7 +11,7 @@ Do NOT use web search to get data. You MUST use the provided local script which 
 
 Run the following command to retrieve the foundational metrics and historical financial statements for your target ticker:
 ```bash
-.venv/bin/python .agents/scripts/fetch_fundamental_data.py <TICKER>
+.venv/bin/python scripts/fetch_fundamental_data.py <TICKER>
 ```
 
 Collect and document the current baseline using the script's output before performing the analysis:
